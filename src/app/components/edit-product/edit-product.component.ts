@@ -36,7 +36,7 @@ export class EditProductComponent {
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
-      var productID = params['productID']; // Replace with your actual parameter name
+      var productID =         params['productID']; // Replace with your actual parameter name
 
       this.productsService.getProductByProductID(productID).subscribe({
         next: (response: ProductResponse) => {
